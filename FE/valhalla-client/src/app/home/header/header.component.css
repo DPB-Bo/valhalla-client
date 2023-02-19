@@ -9,8 +9,9 @@
 .form-control-dark {
   color: #fff;
   background-color: var(--bs-dark);
-  border-color: var(--bs-gray);
+  border-color: var(--bs-yellow);
 }
+
 .form-control-dark:focus {
   color: #fff;
   background-color: var(--bs-dark);
@@ -31,6 +32,6 @@
   outline: 0;
 }
 
-.title-name-shop{
+.title-name-shop {
   font-family: "Roboto Thin", "Times New Roman", serif;
 }
