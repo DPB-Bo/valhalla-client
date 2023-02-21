@@ -41,14 +41,4 @@ export class ProductCartService {
     localStorage.setItem('cart', JSON.stringify(this.tempListProductCartDto));
     this.cartSubject.next(this.tempListProductCartDto);
   }
-
-  public saveCartToLocalStorage(listProductCartDto: ProductCartDto[]): void {
-    localStorage.setItem('cart', JSON.stringify(listProductCartDto));
-  }
-
-  public getCartFromLocalStorage(): ProductCartDto[] {
-    const cart: any = localStorage.getItem('cart');
-    const emptyCart: ProductCartDto[] = [];
-    return cart != null ? JSON.parse(cart) : emptyCart;
-  }
 }
